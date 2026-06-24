@@ -1,3 +1,35 @@
+# Introduction to Zod
+
+## 1. What is Zod?
+
+**Answer:**
+Zod is a runtime validation library for JavaScript and TypeScript. It validates real data while the application is running
+
+## 2. Why do we need Zod if we already have TypeScript?
+
+**Answer:**
+TypeScript only checks code during development. After the project is built, TypeScript is removed and cannot validate user input or API data. Zod runs at runtime and validates actual data coming into the application.
+
+## 3. What is the difference between parse() and safeParse()?
+
+**Answer:**
+parse() throws an error if validation fails, so we usually need a try...catch block. safeParse() never throws. Instead, it returns an object with success, data, or error, making it easier to handle validation results.
+
+## 4. What is refine() in Zod?
+
+**Answer:**
+Refine() is used to add custom validation logic to a schema. It allows you to specify additional conditions that must be met for the data to be valid.
+
+## 5. What does z.infer do?
+
+**Answer:**
+z.infer creates a TypeScript type from a Zod schema. This avoids writing the same type twice and keeps the schema and TypeScript types synchronized.
+
+ts-todo, live - https://typescript-todo-two-lake.vercel.app/
+GitHub - https://github.com/AforArdi/typescript-todo
+
+---
+
 # TypeScript Interview Questions & Answers
 
 ## 1. What is TypeScript?
